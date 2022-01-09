@@ -73,7 +73,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'todo-react-app/build'),
+            os.path.join(BASE_DIR, 'build'),
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -147,7 +147,7 @@ CORS_ORIGIN_WHITELIST = [
 ]
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'todo-react-app/build/static'),
+    os.path.join(BASE_DIR, 'build/static'),
 ]
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
