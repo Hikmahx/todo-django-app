@@ -5,6 +5,10 @@ import Form from './components/Form'
 import Todos from './components/Todos'
 import Attribution from './Attribution'
 
+axios.defaults.xsrfCookieName = 'csrftoken'
+axios.defaults.xsrfHeaderName = 'X-CSRFToken'
+
+
 function App() { 
   const [todos, setTodos] = useState ([])
   const [checked, setChecked] = useState(true)
