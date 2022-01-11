@@ -11,6 +11,7 @@ djangorestframework = "*"
 django-cors-headers = "*"
 whitenoise = "*"
 gunicorn = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.8"
