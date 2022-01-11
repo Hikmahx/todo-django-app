@@ -34,7 +34,7 @@ DEBUG = False
 
 
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['todo-react-django-app.herokuapp.com', '127.0.0.1:8000', 'localhost']
+ALLOWED_HOSTS = ['todo-react-django-app.herokuapp.com', '127.0.0.1:8000', '127.0.0.1', 'localhost']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
