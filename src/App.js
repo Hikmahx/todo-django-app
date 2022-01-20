@@ -48,7 +48,7 @@ function App() {
   const totalTodo =()=>{
     let counter = 0
     setTotal(todos.length)
-    todos.forEach(todo=>{
+    JSON.parse(todos).forEach(todo=>{
       if(!todo.completed){
         return counter--
       }if(todo.completed){
@@ -206,7 +206,7 @@ function App() {
   }
 
   const clearCompleted= ()=>{
-    todos.forEach(todo=>{
+    JSON.parse(todos).forEach(todo=>{
       if(todo.completed){
         let id = todo.id
         setLoading(true)
