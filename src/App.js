@@ -48,8 +48,12 @@ function App() {
   const totalTodo =()=>{
     let counter = 0
     setTotal(todos.length)
+<<<<<<< HEAD
     setTodos(JSON.parse(todos))
     todos.forEach(todo=>{
+=======
+    JSON.parse(todos).forEach(todo=>{
+>>>>>>> bcd3f3f2f8cd0ef5f9380ef3ccabe6325d137d92
       if(!todo.completed){
         return counter--
       }if(todo.completed){
@@ -207,8 +211,12 @@ function App() {
   }
 
   const clearCompleted= ()=>{
+<<<<<<< HEAD
     setTodos(JSON.parse(todos))
     todos.forEach(todo=>{
+=======
+    JSON.parse(todos).forEach(todo=>{
+>>>>>>> bcd3f3f2f8cd0ef5f9380ef3ccabe6325d137d92
       if(todo.completed){
         let id = todo.id
         setLoading(true)
