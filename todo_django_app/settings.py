@@ -34,8 +34,8 @@ SECRET_KEY = os.environ['SECRET_KEY']
 DEBUG = False
 
 
-# ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['todo-react-django-app.herokuapp.com', '127.0.0.1:8000', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
+# ALLOWED_HOSTS = ['todo-react-django-app.herokuapp.com', '127.0.0.1:8000', '127.0.0.1', 'localhost']
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -47,6 +47,7 @@ REST_FRAMEWORK = {
 # Application definition
 
 INSTALLED_APPS = [
+    'whitenoise.runserver_nostatic', 
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -151,8 +152,8 @@ STATICFILES_DIRS = [
 ]
 # STATICFILES_DIRS = []
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-# STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')
+# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'build', 'static')
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
